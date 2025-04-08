@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form input {
+            background-color: rgb(255, 220, 220);
+            border-width: 0px 0px 0px 10px;
+            border-color: rgb(104, 7, 7);
+            border-style: solid;
+            height: 30px;
+            padding: 5px;
+        }
+
+        .container-input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 5px;
+        }
+
+        #submit {
+            margin-top: 20px;
+            width: 30%;
+            border-radius: 10px;
+            border-width: 2px 2px 2px 2px;
+            font-size: 15px;
+            height: 45px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        #submit:hover{
+            background-color: rgb(114, 36, 36);
+            transition: 0.5s;
+            color: aliceblue;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ACTION - recebe o endereço do arquivo/página externa(internet) para onde os dados serão enviados.
+    METHOD - determina como os dados serão enviados, se serão visivel ou oculto (post ou get) -->
+    <form action="#" method="post">
+        <!-- 1 Formulário -->
+
+        <!-- Titulo -->
+        <div class="container">
+            <h1>Cadastro de clientes</h1>
+
+            <div class="container-input">
+                <label>Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome" maxlength="30" required
+                    autofocus>
+            </div class="container-input">
+
+            <div class="container-input">
+                <label>Rua</label>
+                <input type="text" name="telefone" id="telefone" placeholder="(00) 00000-0000" maxlength="12" required
+                    autofocus>
+            </div class="container-input">
+
+            <div class="container-input">
+                <label>Numero de entrega</label>
+                <input type="number" name="numeroEntrega" id="numeroEntrega" placeholder="XXX" min="0" max="9"
+                    requiredautofocus>
+            </div class="container-input">
+
+            <div class="container-input">
+                <label>Bairro</label>
+                <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro" maxlength="30" required
+                    autofocus>
+            </div class="container-input">
+
+            <div class="container-input">
+                <label>UF</label>
+                <input type="text" name="bairro" id="bairro" placeholder="Sigla do seu estado" maxlength="2" required
+                    autofocus>
+            </div class="container-input">
+
+            <label for="submit"></label>
+            <input type="submit" id="submit">
+
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
