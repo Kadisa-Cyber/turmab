@@ -28,7 +28,7 @@ git config user.email - configura o email do usuario
 
 
 
-git branch - lista as branchs
+git branch - lista as branchs.
 
 git branch -m master - renomeia o nome da branch
 
